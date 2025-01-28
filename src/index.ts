@@ -5,6 +5,7 @@ import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+const rootDir = path.join(__dirname, '..');
 
 interface ContentTypes {
   [key: string]: string;
@@ -26,7 +27,7 @@ const server = http.createServer(
         return;
       }
 
-      const filePath = path.join(__dirname, cleanUrl);
+      const filePath = path.join(rootDir, cleanUrl);
       const ext = path.extname(filePath).toLowerCase();
 
       try {
