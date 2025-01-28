@@ -1,0 +1,14 @@
+{
+  "name": "fashion-news-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:dorukozerr/fashion-news-api.git",
+  "author": "Doruk Özer <dorukozer@protonmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.12.0"
+  }
+}
